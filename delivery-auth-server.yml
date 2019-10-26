@@ -25,15 +25,15 @@ security:
 
 spring:
     datasource:
-        data: classpath:/sql/data.sql
         driver-class-name: org.postgresql.Driver
-        password: admin
         platform: postgres
-        schema: classpath:/sql/schema.sql
-        url: jdbc:postgresql://localhost:5432/delivery
+        url: jdbc:postgresql://localhost:5432/delivery?createDatabaseIfNotExist=true
         username: postgres
+        password: admin
+        data: classpath:/sql/data.sql
+        schema: classpath:/sql/schema.sql
     jpa:
-        database: POSTGRESQL
+        database: postgresql
         database-platform: org.hibernate.dialect.PostgreSQLDialect
         generate-ddl: false
         hibernate:
