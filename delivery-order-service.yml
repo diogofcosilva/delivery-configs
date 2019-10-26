@@ -17,11 +17,9 @@ spring:
     datasource:
         driver-class-name: org.postgresql.Driver
         platform: postgres
-        url: jdbc:postgresql://localhost:5432/delivery?createDatabaseIfNotExist=true
+        url: jdbc:postgresql://localhost:5432/delivery
         username: postgres
         password: admin
-        data: classpath:/sql/data.sql
-        schema: classpath:/sql/schema.sql
     jpa:
         database: postgresql
         database-platform: org.hibernate.dialect.PostgreSQLDialect
