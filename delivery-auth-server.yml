@@ -30,7 +30,7 @@ spring:
         password: 'admin'
         platform: postgres
         schema: classpath:/sql/schema.sql
-        url: jdbc:jdbc:postgresql://localhost:5432/delivery?createDatabaseIfNotExist=true&useSSL=false
+        url: jdbc:jdbc:postgresql://localhost:5432/delivery
         username: postgres
     jpa:
         database: POSTGRESQL
