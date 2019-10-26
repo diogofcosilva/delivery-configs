@@ -27,11 +27,11 @@ spring:
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: org.postgresql.Driver
-        password: 'admin'
+        password: admin
         platform: postgres
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/delivery
-        user: postgres
+        username: postgres
     jpa:
         database: POSTGRESQL
         database-platform: org.hibernate.dialect.PostgreSQLDialect
