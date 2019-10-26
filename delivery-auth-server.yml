@@ -31,7 +31,7 @@ spring:
         platform: postgres
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/delivery
-        username: postgres
+        user: postgres
     jpa:
         database: POSTGRESQL
         database-platform: org.hibernate.dialect.PostgreSQLDialect
